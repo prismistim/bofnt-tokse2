@@ -4,7 +4,6 @@ import SCLogo from '@/assets/logo/sc.png'
 import YTLogo from '@/assets/logo/yt.png'
 import MiIoLogo from '@/assets/logo/miio.jpg'
 import type { Member, Link } from '@/types/member'
-import { ComponentOptions } from 'nuxt/dist/app/compat/capi'
 
 type Props = {
   name: string
@@ -24,14 +23,14 @@ const props = defineProps<Props>()
         <span class="text-3xl tracking-wide font-medium">
           {{ props.name }}
         </span>
-        <span v-show="props.isLeader" class="ml-2 text-xl">👑</span>
+        <span v-show="props.isLeader" class="ml-2 text-2xl material-symbols-outlined">verified</span>
       </div>
       <div class="mt-4 flex space-x-6 items-center">
         <span v-for="item of links" :key="item.site">
           <a :href="item.href" target="_blank" class="hover:opacity-50 transition duration-500">
-            <img v-if="item.site === 'x'" :src="XLogo" class="w-8" />
-            <img v-else-if="item.site === 'misskey_io'" :src="MiIoLogo" class="w-8 grayscale" />
-            <img v-else-if="item.site === 'soundcloud'" :src="SCLogo" class="w-8 invert" />
+            <XLogo v-if="item.site === 'x'" :src="XLogo" :font-controlled="false" class="w-8 text-neutral-900 dark:text-neutral-100 transition-all" />
+            <img v-else-if="item.site === 'misskey_io'" :src="MiIoLogo" class="w-8 grayscale invert" />
+            <img v-else-if="item.site === 'soundcloud'" :src="SCLogo" class="w-8 dark:invert transition-all" />
             <img v-else-if="item.site === 'youtube'" :src="YTLogo" class="w-8" />
             <span v-else-if="item.site === 'portal'" class="material-symbols-outlined w-8">
               <span class="text-[1.75rem]">

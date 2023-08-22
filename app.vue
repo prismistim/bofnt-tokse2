@@ -30,6 +30,6 @@ onMounted(() => {
 
 <style lang="postcss">
 body {
-  @apply min-h-screen bg-white dark:bg-neutral-950 dark:text-gray-200;
+  @apply min-h-screen bg-white dark:bg-neutral-950 dark:text-gray-200 transition-all duration-500 ease-in;
 }
 </style>

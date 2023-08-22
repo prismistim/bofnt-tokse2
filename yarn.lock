@@ -1151,7 +1151,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.6.5, @nuxt/kit@npm:^3.5.3, @nuxt/kit@npm:^3.6.5":
+"@nuxt/kit@npm:3.6.5, @nuxt/kit@npm:^3.4.0, @nuxt/kit@npm:^3.5.3, @nuxt/kit@npm:^3.6.5":
   version: 3.6.5
   resolution: "@nuxt/kit@npm:3.6.5"
   dependencies:
@@ -2167,7 +2167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.3.4, @vue/compiler-sfc@npm:^3.3.4":
+"@vue/compiler-sfc@npm:3.3.4, @vue/compiler-sfc@npm:^3.2.47, @vue/compiler-sfc@npm:^3.3.4":
   version: 3.3.4
   resolution: "@vue/compiler-sfc@npm:3.3.4"
   dependencies:
@@ -6946,6 +6946,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mini-svg-data-uri@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.0.5, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -7587,11 +7596,35 @@ __metadata:
     eslint: ^8.47.0
     eslint-config-prettier: ^9.0.0
     nuxt: ^3.6.5
+    nuxt-svgo: ^3.4.0
     prettier: ^3.0.2
     prettier-plugin-tailwindcss: ^0.5.3
     typescript: ^5.1.6
   languageName: unknown
   linkType: soft
+
+"nuxt-svgo@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "nuxt-svgo@npm:3.4.0"
+  dependencies:
+    "@nuxt/kit": ^3.4.0
+    "@vue/compiler-sfc": ^3.2.47
+    mini-svg-data-uri: ^1.4.4
+    svgo: ^3.0.2
+  peerDependencies:
+    svgo-loader: ^4.0.0
+    vue-loader: ^17.0.0
+    vue-svg-loader: 0.17.0-beta.2
+  peerDependenciesMeta:
+    svgo-loader:
+      optional: true
+    vue-loader:
+      optional: true
+    vue-svg-loader:
+      optional: true
+  checksum: a48275ce5b75202279787cbb9355fffd733a57d965892d92dead0ff235b61881540f6cfbf3c7ca4a44bf7d70083c84d036800ddc77375ab9059345d1f968dd7b
+  languageName: node
+  linkType: hard
 
 "nuxt@npm:^3.6.5":
   version: 3.6.5

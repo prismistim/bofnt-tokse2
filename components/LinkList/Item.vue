@@ -11,7 +11,8 @@ const props = defineProps<Props>()
   <a
     :href="props.url"
     target="_blank"
-    class="text-2xl transition-all transform ease-in duration-300 hover:opacity-50"
-    >{{ props.label }}</a
+    class="transform text-2xl font-medium transition-all duration-300 ease-in hover:opacity-50"
   >
+    {{ props.label }}
+  </a>
 </template>
