@@ -1,7 +1,7 @@
 import { ComponentOptions } from "nuxt/dist/app/compat/capi"
 
 export type Link = {
-  site: 'x' | 'soundcloud' | 'youtube' | 'niconico' | 'misskey_io'
+  site: 'x' | 'soundcloud' | 'youtube' | 'niconico' | 'misskey_io' | 'portal'
   href: string
 }
 

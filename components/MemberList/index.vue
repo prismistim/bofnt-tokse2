@@ -28,17 +28,14 @@ const members: Member[] = [
     avatar: AvatarSnowsphere,
     isLeader: false,
     links: [
-      { site: 'x', href: 'https://twitter.com/prismist_m' },
-      { site: 'misskey_io', href: 'https://misskey.io/@snowsphere' },
-      { site: 'soundcloud', href: 'https://soundcloud.com/snowsphere_sc' },
-      { site: 'youtube', href: 'https://youtube.com/@snowsphere' },
+      { site: 'portal', href: 'https://portal.snowsphere.net/' },
     ],
   },
 ]
 </script>
 
 <template>
-  <div class="mt-6 space-y-8">
+  <div class="mt-8 space-y-12">
     <MemberListItem
       v-for="item of members"
       :key="item.name"

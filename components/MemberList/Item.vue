@@ -21,18 +21,23 @@ const props = defineProps<Props>()
     <img :src="props.avatar" />
     <div class="mt-4 lg:mt-0">
       <div>
-        <span class="text-3xl">
+        <span class="text-3xl tracking-wide font-medium">
           {{ props.name }}
         </span>
         <span v-show="props.isLeader" class="ml-2 text-xl">👑</span>
       </div>
-      <div class="mt-4 flex space-x-4 items-center">
+      <div class="mt-4 flex space-x-6 items-center">
         <span v-for="item of links" :key="item.site">
-          <a :href="item.href" target="_blank">
+          <a :href="item.href" target="_blank" class="hover:opacity-50 transition duration-500">
             <img v-if="item.site === 'x'" :src="XLogo" class="w-8" />
             <img v-else-if="item.site === 'misskey_io'" :src="MiIoLogo" class="w-8 grayscale" />
             <img v-else-if="item.site === 'soundcloud'" :src="SCLogo" class="w-8 invert" />
             <img v-else-if="item.site === 'youtube'" :src="YTLogo" class="w-8" />
+            <span v-else-if="item.site === 'portal'" class="material-symbols-outlined w-8">
+              <span class="text-[1.75rem]">
+                link
+              </span>
+            </span>
           </a>
         </span>
       </div>
@@ -42,6 +47,6 @@ const props = defineProps<Props>()
 
 <style lang="postcss">
 img {
-  @apply w-56 rounded-md lg:w-40;
+  @apply w-56 lg:w-40;
 }
 </style>
