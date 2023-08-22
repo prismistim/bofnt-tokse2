@@ -6,7 +6,7 @@ export default <Partial<Config>>{
     fontFamily: {
       sans: [
         'heebo',
-        'a-otf-ud-shin-go-pr6n',
+        'ryo-gothic-plusn',
         'sans-serif',
       ],
     },
