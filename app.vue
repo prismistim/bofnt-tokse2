@@ -10,8 +10,13 @@ useHead({
     { type: 'text/javascript', src: 'https://use.typekit.net/dmm0zpd.js' },
   ],
   meta: [
+    { property: 'og:title', content: '屮◇※芒' },
     { property: 'og:site_name', content: '屮◇※芒' },
-    { property: 'og:type', content: 'website' }
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://bofnt-tokse2.vercel.app/' },
+    { property: 'og:image', content: 'https://bofnt-tokse2.vercel.app/panel.webp' },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:image', content: 'https://bofnt-tokse2.vercel.app/panel.webp' }
   ]
 })
 
