@@ -10,5 +10,6 @@ export type Member = {
   avatarUrl?: string
   avatar: ComponentOptions | string
   isLeader: boolean
+  isFinalStriker: boolean
   links: Link[]
 }

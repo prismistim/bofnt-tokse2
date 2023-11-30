@@ -10,6 +10,7 @@ const members: Member[] = [
     name: 'りょくちゃくん',
     avatar: Avatar6cha9n,
     isLeader: true,
+    isFinalStriker: false,
     links: [
       { site: 'x', href: 'https://twitter.com/6cha9n' },
       { site: 'soundcloud', href: 'https://soundcloud.com/shadecount' },
@@ -19,7 +20,9 @@ const members: Member[] = [
     name: 'h0pe',
     avatar: AvatarH0pe,
     isLeader: false,
+    isFinalStriker: true,
     links: [
+      { site: 'x', href: 'https://twitter.com/hope__rice' },
       { site: 'soundcloud', href: 'https://soundcloud.com/uesmm' },
     ],
   },
@@ -27,6 +30,7 @@ const members: Member[] = [
     name: 'snowsphere',
     avatar: AvatarSnowsphere,
     isLeader: false,
+    isFinalStriker: false,
     links: [
       { site: 'portal', href: 'https://portal.snowsphere.net/' },
     ],
@@ -42,6 +46,7 @@ const members: Member[] = [
       :name="item.name"
       :avatar="item.avatar"
       :is-leader="item.isLeader"
+      :is-final-striker="item.isFinalStriker"
       :links="item.links"
     ></MemberListItem>
   </div>

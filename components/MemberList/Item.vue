@@ -9,6 +9,7 @@ type Props = {
   name: string
   avatar: string
   isLeader: boolean
+  isFinalStriker: boolean
   links: Link[]
 }
 
@@ -24,6 +25,7 @@ const props = defineProps<Props>()
           {{ props.name }}
         </span>
         <span v-show="props.isLeader" class="ml-2 text-2xl material-symbols-outlined">verified</span>
+        <span v-show="props.isFinalStriker" class="ml-2 text-2xl material-symbols-outlined">rocket_launch</span>
       </div>
       <div class="mt-4 flex space-x-6 items-center">
         <span v-for="item of links" :key="item.site">
