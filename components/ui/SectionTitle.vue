@@ -6,6 +6,6 @@
 
 <style scoped lang="postcss">
 h2 {
-  @apply my-4 text-6xl font-medium transition-all dark:text-neutral-100;
+  @apply my-4 text-4xl font-medium transition-all dark:text-neutral-100;
 }
 </style>

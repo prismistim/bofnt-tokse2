@@ -9,10 +9,19 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <div class="py-4">
+  <div class="py-4 space-y-2">
     <div class="text-xl">{{ props.data.genre }}</div>
-    <div class="mt-2 text-3xl">{{ props.data.title }}</div>
-    <div class="mt-2 text-xl">{{ props.data.artist }}</div>
+    <div>
+      <RouterLink :to="`/jump`" class="text-3xl hover:border-b hover:cursor-pointer">{{ props.data.title }}</RouterLink></div>
+    <div class="text-xl">{{ props.data.artist }}
+      <span class="text-xl" v-if="props.data.bga.artist !== props.data.artist">({{ props.data.bga.type }}: {{ props.data.bga.artist }})</span>
+    </div>
+    <div class="text-lg">
+      BPM 
+      <span>{{ props.data.bpm.min }}</span><span v-if="props.data.bpm.min !== props.data.bpm.max"> - {{ props.data.bpm.max }}</span>
+    </div>
+    <div>
+    </div>
   </div>
   <iframe
     width="100%"

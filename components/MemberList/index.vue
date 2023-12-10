@@ -17,7 +17,7 @@ const members: Member[] = [
     ],
   },
   {
-    name: 'h0pe',
+    name: 'H0PE',
     avatar: AvatarH0pe,
     isLeader: false,
     isFinalStriker: true,

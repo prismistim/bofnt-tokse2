@@ -6,6 +6,10 @@ const works: Work[] = [
     id: 13,
     title: 'Nagano landscape sketch',
     artist: 'りょくちゃくん',
+    bga: {
+      type: 'movie',
+      artist: 'りょくちゃくん'
+    },
     genre: 'ELECTRONICA',
     bpm: {
       min: 122,
@@ -17,7 +21,7 @@ const works: Work[] = [
       title: '[BOF:NT] Nagano landscape sketch',
       user: {
         id: 'shadecount',
-        userName: 'りょくちゃくん/6CHA9N',
+        userName: 'りょくちゃくん/6CHA9N'
       }
     }
   },
@@ -25,6 +29,10 @@ const works: Work[] = [
     id: 206,
     title: 'sketch_230831',
     artist: 'snowsphere',
+    bga: {
+      type: 'movie',
+      artist: 'snowsphere'
+    },
     genre: 'ELECTRONICA',
     bpm: {
       min: 98,
@@ -36,7 +44,7 @@ const works: Work[] = [
       title: '[BOF:NT] sketch_230831',
       user: {
         id: 'snowsphere_sc',
-        userName: 'snowsphere',
+        userName: 'snowsphere'
       }
     }
   },
@@ -44,6 +52,10 @@ const works: Work[] = [
     id: 236,
     title: 'DREAMSCAPE',
     artist: 'H0PE',
+    bga: {
+      type: 'image',
+      artist: 'りょくちゃくん'
+    },
     genre: 'ELECTRONICA',
     bpm: {
       min: 144,
@@ -55,7 +67,7 @@ const works: Work[] = [
       title: '[BOF:NT]DREAMSCAPE',
       user: {
         id: 'uesmm',
-        userName: 'H0PE',
+        userName: 'H0PE'
       }
     }
   }
@@ -63,9 +75,11 @@ const works: Work[] = [
 </script>
 
 <template>
-  <WorkListItem
-    v-for="item in works"
-    :key="item.title"
-    :data="item"
-  ></WorkListItem>
+  <div class="space-y-4">
+    <WorkListItem
+      v-for="item in works"
+      :key="item.title"
+      :data="item"
+    ></WorkListItem>
+  </div>
 </template>

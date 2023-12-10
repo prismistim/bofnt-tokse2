@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '@fontsource/zen-old-mincho'
 const colorMode = useColorMode()
 
 useHead({

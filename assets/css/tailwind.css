@@ -12,6 +12,6 @@ html.wf-active {
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply font-default;
   }
 }

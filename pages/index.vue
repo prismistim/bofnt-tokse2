@@ -24,12 +24,12 @@ colorMode.preference = 'system'
       <UiDescription>狭義エレクトロニカ</UiDescription>
     </div>
     <div class="mt-16">
-      <UiSectionTitle>Members</UiSectionTitle>
-      <MemberList></MemberList>
-    </div>
-    <div class="mt-16">
       <UiSectionTitle>Works</UiSectionTitle>
       <WorkList></WorkList>
+    </div>
+    <div class="mt-16">
+      <UiSectionTitle>Members</UiSectionTitle>
+      <MemberList></MemberList>
     </div>
   </NuxtLayout>
 </template>
